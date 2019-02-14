@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import List from './components/core/list'
 import './App.css';
 
 class App extends Component {
+
+  itemSource = [1,2,3,4]
+
+  renderRow = (item, index) => {
+    return <h4 key={index}>{item}</h4>
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        hi long
+        <List itemSource={this.itemSource} renderRow={this.renderRow} />
       </div>
     );
   }
