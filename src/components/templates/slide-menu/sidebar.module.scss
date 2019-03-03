@@ -30,7 +30,7 @@
                         width: 100%;
                     }
                     a:hover {
-                        background-color: var(--gray);
+                        background-color: var(--gray2);
                     }
                 }
             }
@@ -43,4 +43,6 @@
 
 .itemActive {
     background-color: var(--green);
+    color: var(--white);
+    // font-weight: bold;
 }

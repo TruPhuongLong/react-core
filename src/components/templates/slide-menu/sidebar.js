@@ -36,14 +36,14 @@ export default class extends React.Component {
         const { itemActivePath } = this.state
         return (
             <nav className={classes.nav} id="sidebar">
-                <header>slide menu</header>
+                <h2>slide menu</h2>
                 <ul>
                     {
                         categories.map(({ id, children }, idx) => (
                             <React.Fragment>
                                 <hr />
                                 <li key={idx}>
-                                    <header>{id}</header>
+                                    <h4>{id}</h4>
                                     <ul>
                                         {
                                             children.map((item, idx) => {
